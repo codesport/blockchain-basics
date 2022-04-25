@@ -41,7 +41,7 @@
 
 1. **Program a super simple “Hello World” smart contract: write a storeNumber function to store an unsigned integer and then a retrieveNumber function to retrieve it. Clearly comment your code. Include a screenshot of the Remix UI once deployed in your final submission pdf**
 
-**Solution:**
+**Solution to Question 1:**
 
 `Number.sol`: https://github.com/codesport/blockchain-basics/blob/master/contracts/Number.sol
 
@@ -52,16 +52,16 @@ Unit Tests for `Number.sol`: https://github.com/codesport/blockchain-basics/blob
 The contract is named `Number.sol`.  It was unit tested and deployed to Harmony's testnet using my normal hardhat workflow.  Afterwards,  to comply with the Remix requirement, the deployed contract was pasted and compiled  within Remix.  I then attached to the deployed contract within Remix and took the requested screenshot:
 
 ![Remix Screenshot for Number.sol](https://github.com/codesport/blockchain-basics/blob/master/images/number-remix.png "Remix Screenshot for Number.sol")
- **<figcaption>Figure 1: Remix Screenshot for Number.sol</figcaption>** 
+<center>**Figure 1: Remix Screenshot for Number.sol**</center> 
 ---
 
 2. (through 4) **Suppose we want to limit the voting period of each Ballot contract to 5 minutes. To do so, implement the following:**
 
-    * Add a state variable startTime to record the voting start time. 
-    * Create a modifier voteEnded that will check if the voting period is over. 
-    * Use that modifier in the vote function to forbid voting and revert the transaction after the deadline
+    * **Add a state variable startTime to record the voting start time.**
+    * **Create a modifier voteEnded that will check if the voting period is over.** 
+    * **Use that modifier in the vote function to forbid voting and revert the transaction after the deadline**
 
-**Solution:**
+**Solution to Question 2:**
 
 * As with the above `Number.sol` example, `BallotExam.sol` was thoroughly tested and then deployed using my hardhat development workflow. To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. fAfterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's functions via the Remix UI and took the screen captures shown in Figure 2 below.
 
@@ -96,4 +96,4 @@ The contract is named `Number.sol`.  It was unit tested and deployed to Harmony'
 ## Proof of Contract Deployment Via Hardhat Workflow 
 
 ![Contract Deployment Via Hardhat](https://github.com/codesport/blockchain-basics/blob/master/images/deploy-confirmation.png "Contract Deployment Via Hardhat")
- **<figure>Figure 3: Automated Unit Test Screenshot for Questions 1 - 4</figure>**
+ **<center>Contract Deployment Via Hardhat</center>**
