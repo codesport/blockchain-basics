@@ -54,7 +54,7 @@
 * The contract is named `Number.sol`.  It was unit [tested](https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js) and deployed to Harmony's testnet using my normal hardhat workflow.  Afterwards,  to comply with the Remix requirement, the deployed contract was pasted and compiled  within Remix.  I then attached to the deployed contract within Remix and took the requested screenshot:
 
 ![Remix Screenshot for Number.sol](https://github.com/codesport/blockchain-basics/blob/master/images/number-remix.png "Remix Screenshot for Number.sol")
-**<center>Figure 1: Remix Screenshot for Number.sol</center>** 
+#### Figure 1: Remix Screenshot for Number.sol
 ---
 
 2. (through 4) **Suppose we want to limit the voting period of each Ballot contract to 5 minutes. To do so, implement the following:**
@@ -69,7 +69,7 @@
 
 * To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. Afterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's `giveRightToVote` and `vote` functions via the Remix UI and took the screen captures shown in Figure 2 below.
 
-    * `startTime` is initialized in [line 135](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when  the chairperson executes the `giveRightToVote` function:  `startTime = block.timestamp;`
+    * `startTime` is initialized in [line 135](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when the chairperson executes the `giveRightToVote` function. Line 135 is:  `startTime = block.timestamp;`
 
     * `giveRightToVote` was called at 9:42 AM. This auto-initialized the `startTime` global. The 9:42 AM timestamp shown in the screen capture of the Harmony Explorer in **Figure 2**
 
@@ -83,7 +83,7 @@
 
 
 ![Remix Screenshot for BallotExam.sol](https://github.com/codesport/blockchain-basics/blob/master/images/ballot-remix.png "Remix Screenshot for the modified ballot contract")
- **<center>Figure 2: Timestamped Screenshots for:  Contract Deployment, `giveRightToVote` Assignment, and Reverted Voting with BallotExam.sol</center>**
+#### Figure 2: Timestamped Screenshots for:  Contract Deployment, `giveRightToVote` Assignment, and Reverted Voting with BallotExam.sol
 
 
 ## Unit Test Screenshot Results for Part B, Solidity Questions 1 - 4
@@ -99,4 +99,4 @@
 ## Proof of Contract Deployment Via Hardhat Workflow 
 
 ![Contract Deployment Via Hardhat](https://github.com/codesport/blockchain-basics/blob/master/images/deploy-confirmation.png "Contract Deployment Via Hardhat")
- **<center>Figure 4: Contract Deployment Via Hardhat</center>**
+#### Figure 4: Contract Deployment Via Hardhat
