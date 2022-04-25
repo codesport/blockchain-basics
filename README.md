@@ -93,7 +93,7 @@
 * **`Number.sol` Unit Tests Script:** https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js
 
 ![Unit Test Screenshot for Questions 1 - 4](https://github.com/codesport/blockchain-basics/blob/master/images/unit-tests-022-04-23-203409.png "Unit Tests")
-##### Figure 3: Automated Unit Test Screenshot for Questions 1 - 4
+#### Figure 3: Automated Unit Test Screenshot for Questions 1 - 4
 
    
 ## Proof of Contract Deployment Via Hardhat Workflow 
