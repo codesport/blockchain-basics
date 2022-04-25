@@ -71,7 +71,7 @@
 
     * `startTime` is initialized in [line 135](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when  the chairperson executes the `giveRightToVote` function:  `startTime = block.timestamp;`
 
-    * `giveRightToVote` was called at 9:42 AM. The timestamp shown in the screen capture of the Harmony Explorer in **Figure 2**.
+    * `giveRightToVote` was called at 9:42 AM. This auto-initialized the `startTime` global. The 9:42 AM timestamp shown in the screen capture of the Harmony Explorer in **Figure 2**
 
     * A vote was attempted 15 minutes later at 9:57 AM.  The reverted message is also shown in Figure 2 along with the timestamp. 
 
@@ -93,7 +93,7 @@
 * **`Number.sol` Unit Tests Script:** https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js
 
 ![Unit Test Screenshot for Questions 1 - 4](https://github.com/codesport/blockchain-basics/blob/master/images/unit-tests-022-04-23-203409.png "Unit Tests")
- **<figure>Figure 3: Automated Unit Test Screenshot for Questions 1 - 4</figure>**
+##### Figure 3: Automated Unit Test Screenshot for Questions 1 - 4
 
    
 ## Proof of Contract Deployment Via Hardhat Workflow 
