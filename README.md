@@ -33,9 +33,9 @@
 
     **Solution:**
     
-    * Express and show colors within an objective, neutral and trusted frame of reference (or language, human, etc) you both trust and know to be absolute sources of truth: 
+    * Express and show colors within an objective and neutral reference (i.e.,  language, human, etc) that you both trust and know to be absolute sources of truth: 
        
-    * After taking photos of both objects with a camera provided by colorblind friend, use Photoshop's RGB color picker to get a HEX representation of both colors
+        * After taking photos of both objects with a camera provided by colorblind friend, use Photoshop's RGB color picker to get a HEX or RGB representation of both colors. The different HEX and RGB values from an objective source will prove that the objects are of different colors 
 
 # B. Solidity
 
