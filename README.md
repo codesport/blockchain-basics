@@ -33,11 +33,11 @@
 
     **Solution:**
     
-    * Express and show colors within an objective and neutral reference (i.e.,  language, human, etc) that you both trust and know to be absolute sources of truth: 
+    * Express and show colors within an objective and neutral reference (e.g., a machine, a language, etc) that you both trust and know to be absolute sources of truth: 
        
-        * After taking photos of both objects with a camera provided by colorblind friend, use Photoshop's RGB color picker to get a HEX or RGB representation of both colors. 
+        * After taking photos of both objects with a camera provided by colorblind friend, use Photoshop' color picker to get a HEX or RGB representation of both colors. 
         
-        * The different HEX and RGB values from an Photoshop (n objective source of truth) will prove that the objects are of different colors 
+        * The different HEX and RGB values from Photoshop (an objective source of truth) will show that the objects are of different colors 
 
 # B. Solidity
 
@@ -45,13 +45,13 @@
 
 **Solution to Question 1:**
 
-`Number.sol`: https://github.com/codesport/blockchain-basics/blob/master/contracts/Number.sol
+* `Number.sol`: https://github.com/codesport/blockchain-basics/blob/master/contracts/Number.sol
 
-Unit Tests for `Number.sol`: https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js
+* Unit Tests for `Number.sol`: https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js
 
-`Number.sol` Harmony Deployment: https://explorer.pops.one/address/0x7c4fc4f86e83089d84108983316929e6dfe3f5e5?activeTab=7
+* `Number.sol` Harmony Deployment: https://explorer.pops.one/address/0x7c4fc4f86e83089d84108983316929e6dfe3f5e5?activeTab=7
 
-The contract is named `Number.sol`.  It was unit [tested](https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js) and deployed to Harmony's testnet using my normal hardhat workflow.  Afterwards,  to comply with the Remix requirement, the deployed contract was pasted and compiled  within Remix.  I then attached to the deployed contract within Remix and took the requested screenshot:
+* The contract is named `Number.sol`.  It was unit [tested](https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js) and deployed to Harmony's testnet using my normal hardhat workflow.  Afterwards,  to comply with the Remix requirement, the deployed contract was pasted and compiled  within Remix.  I then attached to the deployed contract within Remix and took the requested screenshot:
 
 ![Remix Screenshot for Number.sol](https://github.com/codesport/blockchain-basics/blob/master/images/number-remix.png "Remix Screenshot for Number.sol")
 **<center>Figure 1: Remix Screenshot for Number.sol</center>** 
@@ -88,9 +88,9 @@ The contract is named `Number.sol`.  It was unit [tested](https://github.com/cod
 
 ## Unit Test Screenshot Results for Part B, Solidity Questions 1 - 4
 
-* `BallotExam.sol` Unit Test Script: https://github.com/codesport/blockchain-basics/blob/master/test/test-ballotExam.js
+* **`BallotExam.sol` Unit Test Script:** https://github.com/codesport/blockchain-basics/blob/master/test/test-ballotExam.js
 
-* `Number.sol` Unit Tests Script : https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js
+* **`Number.sol` Unit Tests Script:** https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js
 
 ![Unit Test Screenshot for Questions 1 - 4](https://github.com/codesport/blockchain-basics/blob/master/images/unit-tests-022-04-23-203409.png "Unit Tests")
  **<figure>Figure 3: Automated Unit Test Screenshot for Questions 1 - 4</figure>**
