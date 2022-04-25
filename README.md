@@ -43,15 +43,15 @@
 
 **Solution:**
 
-`Number.sol`: https://github.com/codesport/zku-blockchain-exam/blob/master/contracts/Number.sol
+`Number.sol`: https://github.com/codesport/blockchain-basics/blob/master/contracts/Number.sol
 
-Unit Tests for `Number.sol`: https://github.com/codesport/zku-blockchain-exam/blob/master/test/test-number.js
+Unit Tests for `Number.sol`: https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js
 
 **Number Contract Deployment:** https://explorer.pops.one/address/0x7c4fc4f86e83089d84108983316929e6dfe3f5e5?activeTab=7
 
 The contract is named `Number.sol`.  It was unit tested and deployed to Harmony's testnet using my normal hardhat workflow.  Afterwards,  to comply with the Remix requirement, the deployed contract was pasted and compiled  within Remix.  I then attached to the deployed contract within Remix and took the requested screenshot:
 
-![Remix Screenshot for Number.sol](https://github.com/codesport/zku-blockchain-exam/blob/master/images/number-remix.png "Remix Screenshot for Number.sol")
+![Remix Screenshot for Number.sol](https://github.com/codesport/blockchain-basics/blob/master/images/number-remix.png "Remix Screenshot for Number.sol")
  **<figcaption>Figure 1: Remix Screenshot for Number.sol</figcaption>** 
 ---
 
@@ -65,31 +65,31 @@ The contract is named `Number.sol`.  It was unit tested and deployed to Harmony'
 
 * As with the above Number.sol example, `BallotExam.sol` was thoroughly tested and then deployed using my hardhat development workflow. To comply with the Remix screenshot requirements, the contract was pasted and compiled within Remix. I then attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's functions via the Remix UI and took the screen capures shown in Figure 2 below.
 
-    * `startTime` is initialized in [line 135](https://github.com/codesport/zku-blockchain-exam/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when  the chairperson executes the `giveRightToVote` function:  `135         startTime = block.timestamp;`
+    * `startTime` is initialized in [line 135](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when  the chairperson executes the `giveRightToVote` function:  `135         startTime = block.timestamp;`
 
     * `giveRightToVote` was called at 9:42 AM. The timestamp shown in the screen capture of the Harmony Explorer in **Figure 2**.
 
     * A vote was attempted 15 minutes later at 9:57 AM.  The reverted message is also shown in Figure 2 along with the timestamp. 
 
-    * `BallotExam.sol`: https://github.com/codesport/zku-blockchain-exam/blob/master/contracts/BallotExam.sol
+    * `BallotExam.sol`: https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol
 
-    * Unit Tests for `BallotExam.sol` : https://github.com/codesport/zku-blockchain-exam/blob/master/test/test-ballotExam.js
+    * Unit Tests for `BallotExam.sol` : https://github.com/codesport/blockchain-basics/blob/master/test/test-ballotExam.js
 
     * **Ballot Contract Deployment:**  https://explorer.pops.one/address/0xb344828c56ec9dc815e572fdfd022a1d69d737e2?activeTab=7
 
 
 
-![Remix Screenshot for BallotExam.sol](https://github.com/codesport/zku-blockchain-exam/blob/master/images/ballot-remix.png "Remix Screenshot for the modified ballot contract")
+![Remix Screenshot for BallotExam.sol](https://github.com/codesport/blockchain-basics/blob/master/images/ballot-remix.png "Remix Screenshot for the modified ballot contract")
  **<center>Figure 2: Timestamped Screenshots for:  Contract Deployment, `giveRightToVote` Assignment, and Reverted Voting with BallotExam.sol</center>**
 
 
 ## Unit Test Screenshot Results for Part B, Solidity Questions 1 - 4
 
-* `BallotExam.sol` Unit Test Script: https://github.com/codesport/zku-blockchain-exam/blob/master/test/test-ballotExam.js
+* `BallotExam.sol` Unit Test Script: https://github.com/codesport/blockchain-basics/blob/master/test/test-ballotExam.js
 
-* `Number.sol` Unit Tests Script : https://github.com/codesport/zku-blockchain-exam/blob/master/test/test-number.js
+* `Number.sol` Unit Tests Script : https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js
 
-![Unit Test Screenshot for Questions 1 - 4](https://github.com/codesport/zku-blockchain-exam/blob/master/images/unit-tests-022-04-23-203409.png "Unit Tests")
+![Unit Test Screenshot for Questions 1 - 4](https://github.com/codesport/blockchain-basics/blob/master/images/unit-tests-022-04-23-203409.png "Unit Tests")
  **<center>Figure 3: Automated Unit Test Screenshot for Questions 1 - 4</center>**
 
    
