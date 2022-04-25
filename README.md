@@ -47,9 +47,9 @@
 
 Unit Tests for `Number.sol`: https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js
 
-**`Number.sol` Contract Deployment:** https://explorer.pops.one/address/0x7c4fc4f86e83089d84108983316929e6dfe3f5e5?activeTab=7
+`Number.sol` Harmony Deployment: https://explorer.pops.one/address/0x7c4fc4f86e83089d84108983316929e6dfe3f5e5?activeTab=7
 
-The contract is named `Number.sol`.  It was unit tested and deployed to Harmony's testnet using my normal hardhat workflow.  Afterwards,  to comply with the Remix requirement, the deployed contract was pasted and compiled  within Remix.  I then attached to the deployed contract within Remix and took the requested screenshot:
+The contract is named `Number.sol`.  It was unit [tested](https://github.com/codesport/blockchain-basics/blob/master/test/test-number.js) and deployed to Harmony's testnet using my normal hardhat workflow.  Afterwards,  to comply with the Remix requirement, the deployed contract was pasted and compiled  within Remix.  I then attached to the deployed contract within Remix and took the requested screenshot:
 
 ![Remix Screenshot for Number.sol](https://github.com/codesport/blockchain-basics/blob/master/images/number-remix.png "Remix Screenshot for Number.sol")
 **<center>Figure 1: Remix Screenshot for Number.sol</center>** 
@@ -63,7 +63,9 @@ The contract is named `Number.sol`.  It was unit tested and deployed to Harmony'
 
 **Solution to Question 2:**
 
-* As with the above `Number.sol` example, `BallotExam.sol` was thoroughly tested and then deployed using my hardhat development workflow. To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. fAfterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's functions via the Remix UI and took the screen captures shown in Figure 2 below.
+* As with the above `Number.sol` example, `BallotExam.sol` was thoroughly [tested](https://github.com/codesport/blockchain-basics/blob/master/test/test-ballotExam.js) and then deployed using my hardhat development workflow. 
+
+* To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. Afterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's `giveRightToVote` and 'vote` functions via the Remix UI and took the screen captures shown in Figure 2 below.
 
     * `startTime` is initialized in [line 135](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when  the chairperson executes the `giveRightToVote` function:  `135         startTime = block.timestamp;`
 
@@ -75,8 +77,7 @@ The contract is named `Number.sol`.  It was unit tested and deployed to Harmony'
 
     * Unit Tests for `BallotExam.sol` : https://github.com/codesport/blockchain-basics/blob/master/test/test-ballotExam.js
 
-    * **Ballot Contract Deployment:**  https://explorer.pops.one/address/0xb344828c56ec9dc815e572fdfd022a1d69d737e2?activeTab=7
-
+    * `BallotExam.sol` Harmony Deployment:  https://explorer.pops.one/address/0xb344828c56ec9dc815e572fdfd022a1d69d737e2?activeTab=7
 
 
 ![Remix Screenshot for BallotExam.sol](https://github.com/codesport/blockchain-basics/blob/master/images/ballot-remix.png "Remix Screenshot for the modified ballot contract")
