@@ -22,11 +22,11 @@
 
     Hash is the transformation of a source (file, text, or string) into a unique (if collision resistant) alphanumeric representation called a digest. This digest has a specific and standardized length depending on the hashing algorithm used.  Furthermore, for a given algorithm, the length of the hash is the same regardless of the size of the source.  
 
-    Hashing may be used to verify whether a file has been tampered with by compared to a reference hash. This is called data integrity. As such, if the reference hash does not match the hash of the delivered "file", the original file has been tampered with. This would violate date integrity.
+    Hashing may be used to verify whether a file has been tampered with by comparing it to a reference hash. This concept is called data integrity. As such, if the reference hash does not match the hash of the delivered "file", the original file has been tampered with. This would violate date integrity.
     
-    Hashing is used to hide information because the best algorithms are traditionally viewed  as 1-way (non-reversible).  However, there exist the concept of rainbow tables which effectively make 1-way hashes 2-way  by means of lookup tables.  These rainbow tables are built by brute force computations of hashes on common dictionary words or passwords. Hashing may be made more robust by seeding the source with a `salt` and ensuring the hashing algo does indeed generate unique hashes (by being collision resistant).
+    Hashing is used to hide information because the best algorithms are traditionally viewed  as 1-way (non-reversible).  However, there exist the concept of "rainbow" tables. Ipso facto, these rainbow tables make 1-way hashes 2-way by means of lookup tables.  Rainbow tables are built by brute force computations of hashes on common dictionary words or passwords. Hashing may be made more robust (computationally expensive to crack)  by seeding the source with a `salt` and ensuring the hashing algorithm does indeed generate unique hashes (by being collision resistant).
     
-    Hashing is not encryption. Encryption is natively 2-way. 
+    As a final note, hashing is not encryption. Encryption is natively 2-way. 
 
 
 4. **How would you prove to a colorblind person that two different colored objects are actually of different colors?**
@@ -63,17 +63,19 @@
     * **Create a modifier voteEnded that will check if the voting period is over.** 
     * **Use that modifier in the vote function to forbid voting and revert the transaction after the deadline**
 
-**Solution to Question 2:**
+**Solution to Questions 2 - 4:**
 
 * As with the above `Number.sol` example, `BallotExam.sol` was thoroughly [tested](https://github.com/codesport/blockchain-basics/blob/master/test/test-ballotExam.js) and then deployed using my hardhat development workflow. 
 
-* To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. Afterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's `giveRightToVote` and `vote` functions via the Remix UI and took the screen captures shown in [Figure 2](https://github.com/codesport/blockchain-basics#figure-2-timestamped-screenshots-for--contract-deployment-giverighttovote-assignment-and-reverted-voting-with-ballotexamsol) below.
+* To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. Afterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's `giveRightToVote` and `vote` functions via the Remix UI and took the screen captures shown in [Figure 2](https://github.com/codesport/blockchain-basics#figure-2-timestamped-screenshots-for-contract-deployment-giverighttovote-assignment-and-reverted-voting-with-ballotexamsol) below.
 
     * `startTime` is initialized in [line 135](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when the chairperson executes the `giveRightToVote` function. Line 135 is:  `startTime = block.timestamp;`
 
-    * `giveRightToVote` was called at 9:42 AM. This auto-initialized the `startTime` global. The 9:42 AM timestamp shown in the screen capture of the Harmony Explorer in [Figure 2](https://github.com/codesport/blockchain-basics#figure-2-timestamped-screenshots-for--contract-deployment-giverighttovote-assignment-and-reverted-voting-with-ballotexamsol)
+    * `giveRightToVote` was called at 9:42 AM, thus auto-initializing the `startTime` global. The 9:42 AM timestamp shown in the screen capture of the Harmony Explorer in [Figure 2](https://github.com/codesport/blockchain-basics#figure-2-timestamped-screenshots-for-contract-deployment-giverighttovote-assignment-and-reverted-voting-with-ballotexamsol)
 
-    * A vote was attempted 15 minutes later at 9:57 AM.  The reverted message is also shown in [Figure 2](https://github.com/codesport/blockchain-basics#figure-2-timestamped-screenshots-for--contract-deployment-giverighttovote-assignment-and-reverted-voting-with-ballotexamsol) along with the timestamp. 
+    * A vote was attempted 15 minutes later at 9:57 AM.  The reverted message is also shown in [Figure 2](https://github.com/codesport/blockchain-basics#figure-2-timestamped-screenshots-for-contract-deployment-giverighttovote-assignment-and-reverted-voting-with-ballotexamsol) along with the timestamp. 
+
+        * Reversion is enforced by [line 187](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L187),  `function vote(uint proposal) external voteEnded(block.timestamp){` which feeds the current `block.timestamp` to the ["dynamic" function modifier on lines 65 - 83](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L65-L83) .
 
     * `BallotExam.sol`: https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol
 
