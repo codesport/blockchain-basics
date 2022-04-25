@@ -35,7 +35,7 @@
     
     * Express and show colors within an objective and neutral reference (e.g., a machine, a language, etc) that you both trust and know to be absolute sources of truth: 
        
-        * After taking photos of both objects with a camera provided by colorblind friend, use Photoshop' color picker to get a HEX or RGB representation of both colors. 
+        * After taking photos of both objects with a camera provided by colorblind friend, use Photoshop's color picker to get a HEX or RGB representation of both colors. 
         
         * The different HEX and RGB values from Photoshop (an objective source of truth) will show that the objects are of different colors 
 
@@ -67,9 +67,9 @@
 
 * As with the above `Number.sol` example, `BallotExam.sol` was thoroughly [tested](https://github.com/codesport/blockchain-basics/blob/master/test/test-ballotExam.js) and then deployed using my hardhat development workflow. 
 
-* To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. Afterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's `giveRightToVote` and 'vote` functions via the Remix UI and took the screen captures shown in Figure 2 below.
+* To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. Afterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's `giveRightToVote` and `vote` functions via the Remix UI and took the screen captures shown in Figure 2 below.
 
-    * `startTime` is initialized in [line 135](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when  the chairperson executes the `giveRightToVote` function:  `135         startTime = block.timestamp;`
+    * `startTime` is initialized in [line 135](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when  the chairperson executes the `giveRightToVote` function:  `startTime = block.timestamp;`
 
     * `giveRightToVote` was called at 9:42 AM. The timestamp shown in the screen capture of the Harmony Explorer in **Figure 2**.
 
