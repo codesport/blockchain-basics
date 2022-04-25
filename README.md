@@ -67,13 +67,13 @@
 
 * As with the above `Number.sol` example, `BallotExam.sol` was thoroughly [tested](https://github.com/codesport/blockchain-basics/blob/master/test/test-ballotExam.js) and then deployed using my hardhat development workflow. 
 
-* To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. Afterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's `giveRightToVote` and `vote` functions via the Remix UI and took the screen captures shown in Figure 2 below.
+* To comply with the Remix screenshot requirements, the contract was then pasted and compiled within Remix. Afterwards, I attached to the already deployed contract by entering its address in Remix.  Finally, I accessed contract's `giveRightToVote` and `vote` functions via the Remix UI and took the screen captures shown in [Figure 2](#figure-2-timestamped-screenshots-for--contract-deployment-giverighttovote-assignment-and-reverted-voting-with-ballotexamsol) below.
 
     * `startTime` is initialized in [line 135](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol#L135) of `BallotExam.sol` when the chairperson executes the `giveRightToVote` function. Line 135 is:  `startTime = block.timestamp;`
 
-    * `giveRightToVote` was called at 9:42 AM. This auto-initialized the `startTime` global. The 9:42 AM timestamp shown in the screen capture of the Harmony Explorer in **Figure 2**
+    * `giveRightToVote` was called at 9:42 AM. This auto-initialized the `startTime` global. The 9:42 AM timestamp shown in the screen capture of the Harmony Explorer in [Figure 2](#figure-2-timestamped-screenshots-for--contract-deployment-giverighttovote-assignment-and-reverted-voting-with-ballotexamsol)
 
-    * A vote was attempted 15 minutes later at 9:57 AM.  The reverted message is also shown in Figure 2 along with the timestamp. 
+    * A vote was attempted 15 minutes later at 9:57 AM.  The reverted message is also shown in [Figure 2](#figure-2-timestamped-screenshots-for--contract-deployment-giverighttovote-assignment-and-reverted-voting-with-ballotexamsol) along with the timestamp. 
 
     * `BallotExam.sol`: https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol
 
@@ -82,8 +82,9 @@
     * `BallotExam.sol` Harmony Deployment:  https://explorer.pops.one/address/0xb344828c56ec9dc815e572fdfd022a1d69d737e2?activeTab=7
 
 
+#### Figure 2: Timestamped Screenshots for Contract Deployment, `giveRightToVote` Assignment, and Reverted Voting with BallotExam.sol
 ![Remix Screenshot for BallotExam.sol](https://github.com/codesport/blockchain-basics/blob/master/images/ballot-remix.png "Remix Screenshot for the modified ballot contract")
-#### Figure 2: Timestamped Screenshots for:  Contract Deployment, `giveRightToVote` Assignment, and Reverted Voting with BallotExam.sol
+
 
 
 ## Unit Test Screenshot Results for Part B, Solidity Questions 1 - 4
