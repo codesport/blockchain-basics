@@ -52,7 +52,7 @@ Unit Tests for `Number.sol`: https://github.com/codesport/blockchain-basics/blob
 The contract is named `Number.sol`.  It was unit tested and deployed to Harmony's testnet using my normal hardhat workflow.  Afterwards,  to comply with the Remix requirement, the deployed contract was pasted and compiled  within Remix.  I then attached to the deployed contract within Remix and took the requested screenshot:
 
 ![Remix Screenshot for Number.sol](https://github.com/codesport/blockchain-basics/blob/master/images/number-remix.png "Remix Screenshot for Number.sol")
-<center>**Figure 1: Remix Screenshot for Number.sol**</center> 
+**<center>Figure 1: Remix Screenshot for Number.sol</center>** 
 ---
 
 2. (through 4) **Suppose we want to limit the voting period of each Ballot contract to 5 minutes. To do so, implement the following:**
@@ -96,4 +96,4 @@ The contract is named `Number.sol`.  It was unit tested and deployed to Harmony'
 ## Proof of Contract Deployment Via Hardhat Workflow 
 
 ![Contract Deployment Via Hardhat](https://github.com/codesport/blockchain-basics/blob/master/images/deploy-confirmation.png "Contract Deployment Via Hardhat")
- **<center>Contract Deployment Via Hardhat</center>**
+ **<center>Figure 4: Contract Deployment Via Hardhat</center>**
