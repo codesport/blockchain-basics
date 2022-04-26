@@ -13,7 +13,7 @@
 
     Gas is a transaction fee that's charged for write operations to the Ethereum blockchain.  Write operations include deploying contracts, sending funds to another address as well as changing state variables within already deployed contracts. It is argued that Gas deters "spamming" the network with frivolous transactions. 
 
-    Gas optimization (minimizing gas fees) is important since it saves money. Specifically, it reduce the gas fees end users  pay to interact with our contracts as well as our cost to deploy said contracts. The more complex the computations within a smart contract, the higher the gas fees.
+    Gas optimization (minimizing gas fees) is important since it saves money. Specifically, it reduces the gas fees end users  pay to interact with our contracts as well as our cost to deploy said contracts. The more complex the computations within a smart contract, the higher the gas fees.
 
 
 3. **What is a hash? Why do people use hashing to hide information?**
@@ -22,7 +22,7 @@
 
     Hash is the transformation of a source (file, text, or string) into a unique (if collision resistant) alphanumeric representation called a digest. This digest has a specific and standardized length depending on the hashing algorithm used.  Furthermore, for a given algorithm, the length of the hash is the same regardless of the size of the source.  
 
-    Hashing may be used to verify whether a file has been tampered with by comparing it to a reference hash. This concept is called data integrity. Hence, if the reference hash does not match that of the delivered "file", the original file has been tampered with, thus violating data integrity.
+    Hashing may be used to verify whether a file has been tampered with by comparing it to a reference hash. This concept is called data integrity. Hence, if the reference hash does not match that of the delivered "file", the delivered file has been tampered with.  Such a scenario violates data integrity.
     
     Hashing is used to hide information because the best algorithms are traditionally viewed  as 1-way (non-reversible).  However, there exist the concept of "rainbow" tables. Ipso facto, these rainbow tables make 1-way hashes 2-way by means of lookup tables.  Rainbow tables are built by brute force computations of hashes on common dictionary words or passwords. Hashing may be made more robust (computationally expensive to crack)  by seeding the source with a `salt` and ensuring the hashing algorithm does indeed generate unique hashes (by being collision resistant).
     
