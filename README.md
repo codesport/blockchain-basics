@@ -86,7 +86,7 @@
 
 #### Figure 2: Timestamped Screenshots for Contract Deployment, `giveRightToVote` Assignment, and Reverted Voting with BallotExam.sol
 ![Remix Screenshot for BallotExam.sol](https://github.com/codesport/blockchain-basics/blob/master/images/ballot-remix.png "Remix Screenshot for the modified ballot contract")
-
+**Figure 2: Timestamped Screenshots for Contract Deployment, `giveRightToVote` Assignment, and Reverted Voting with BallotExam.sol**
 
 ## Unit Test Screenshot Results for Part B, Solidity Questions 1 - 4
 
