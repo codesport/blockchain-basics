@@ -1,4 +1,4 @@
-**Attribution:** This dApp and the accompanying solutions were created by **Marcos (Marcus) A. B.** His GitHub username is [codesport](https://github.com/codesport/).  [BallotExam.sol](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol) used herein is a modification of Ballot.sol from [Soliditylang.org](https://docs.soliditylang.org/en/v0.8.11/solidity-by-example.html#voting)
+**Attribution:** This dApp and the accompanying solutions were created by **Marcos (Marcus) A. B.** His GitHub username is [codesport](https://github.com/codesport/).  [BallotExam.sol](https://github.com/codesport/blockchain-basics/blob/master/contracts/BallotExam.sol) used herein is his modification of Ballot.sol from [Soliditylang.org](https://docs.soliditylang.org/en/v0.8.11/solidity-by-example.html#voting)
 
 # A. Conceptual Knowledge
 
