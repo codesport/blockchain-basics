@@ -1,3 +1,5 @@
+**Attribution:** This dApp and the accompanying solutions were created by **Marcos (Marcus) A. B.** His GitHub username is [codesport](https://github.com/codesport/).  BallotExam.sol was modified from [Soliditylang.org](https://docs.soliditylang.org/en/v0.8.11/solidity-by-example.html#voting)
+
 # A. Conceptual Knowledge
 
 1. **What is a smart contract? How are they deployed? You should be able to describe how a smart contract is deployed and the necessary steps.**
